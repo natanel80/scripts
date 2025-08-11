@@ -18,7 +18,7 @@
 #                 different system configurations.
 #        AUTHOR:  Gemini
 #       CREATED:  2024-06-28
-#      REVISION:  7.0
+#      REVISION:  8.0
 #
 #===============================================================================
 
@@ -114,8 +114,8 @@ echo "-------------------------------------------------"
 echo "Date         | Day       | Screen Time (HH:MM:SS)"
 echo "-------------------------------------------------"
 
-# Loop from 6 days ago to today (a total of 7 days).
-for i in {6..0}; do
+# Loop from 7 days ago to today (a total of 8 days).
+for i in {7..0}; do
     target_date_str=$(date -v-${i}d "+%Y-%m-%d")
     day_name=$(date -v-${i}d "+%A")
     day_start_epoch=$(LC_TIME=C date -j -f "%Y-%m-%d %H:%M:%S" "$target_date_str 00:00:00" "+%s")
